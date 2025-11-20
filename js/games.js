@@ -26,11 +26,11 @@ let gameCardData = [
 ];
 
 // Global cart management
-window.cart = JSON.parse(localStorage.getItem("cart")) || [];
+window.cart = JSON.parse(localStorage.getItem("cart_game")) || [];
 
 window.updateCart = (newCart) => {
   window.cart = newCart;
-  localStorage.setItem("cart", JSON.stringify(newCart));
+  localStorage.setItem("cart_game", JSON.stringify(newCart));
   updateCartDisplay();
 };
 
